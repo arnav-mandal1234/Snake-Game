@@ -10,6 +10,8 @@ function setup() {
     s = new snake();
     frameRate(25);
     picklocation();
+    var audio = new Audio('music.mp3');
+    audio.play();
 }
 function eat(){
   if (dist(food1.x, food1.y, s.x, s.y) < 1){
