@@ -10,7 +10,7 @@ function setup() {
     s = new snake();
     frameRate(25);
     picklocation();
-    var audio = new Audio('music.mp3');
+    var audio = new Audio('Music/music.mp3');
     audio.play();
 }
 function eat(){
@@ -19,7 +19,7 @@ function eat(){
     scorenum ++;
     return true;
   }
-  else if (dist(food2.x, food2.y, s.x, s.y) < 1 && (randomfood == 3 || randomfood == 4)){
+  else if (dist(food2.x, food2.y, s.x, s.y) < 1 && (randomfood > 2)){
       s.total ++;
       scorenum ++;
       return true;
