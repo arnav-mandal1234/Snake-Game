@@ -6,7 +6,7 @@ var Hscore = 0;
 var scorenum=0;
 
 function setup() {
-    createCanvas(1517, 750);
+    createCanvas(windowWidth, windowHeight);
     s = new snake();
     frameRate(25);
     picklocation();
@@ -32,7 +32,7 @@ function eat(){
   else false
 }
 function dead(){
-  if (s.x > 1510 || s.y > 750 || s.x < 0 || s.y < 0){
+  if (s.x > windowWidth || s.y > windowHeight || s.x < 0 || s.y < 0){
     Hscore = max(Hscore, scorenum);
     s = new snake();
     scorenum = 0;
