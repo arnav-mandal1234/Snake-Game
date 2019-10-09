@@ -4,6 +4,8 @@ var food1,food2,specfood;
 var randomfood;
 var Hscore = 0;
 var scorenum=0;
+//hacktoberfest
+
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
