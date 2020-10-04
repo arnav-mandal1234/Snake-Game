@@ -41,4 +41,14 @@ function snake(){
         this.xspeed = x;
         this.yspeed = y;
     }
+    
+    this.show = function(){
+        fill(255);
+          for (var i = 0; i < this.tail.length; i ++){
+             rect(this.tail[i].x, this.tail[i].y, pix, pix);}
+    }
+    this.dir = function(x, y){
+        this.xspeed = x;
+        this.yspeed = y;
+    }
 }
